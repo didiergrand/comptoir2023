@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "buildexport": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,7 +17,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-tabs": "^6.0.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "axios": "^0.16.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

@@ -1,4 +1,5 @@
 import Layout from "@component/components/layout";
+import Loading from "@component/components/loading";
 import QuickLinks from "@component/components/quicklinks";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -18,7 +19,7 @@ const Home = () => {
   }, []);
 
   if (!post) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (

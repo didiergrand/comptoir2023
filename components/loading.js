@@ -1,8 +1,12 @@
+import Layout from './layout'
+
 export default function Loading() {
     // You can add any UI inside Loading, including a Skeleton.
     return (
-        <div className="loading">
-            loading...
-        </div>
+        <Layout>
+            <div className="loading">
+                <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+        </Layout>
         )
   }

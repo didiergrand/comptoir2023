@@ -1,6 +1,7 @@
 import '@component/styles/wordpressNative.css'
 import '@component/styles/fonts.css'
 import '@component/styles/globals.css'
+import '@component/styles/tailwind.css'
 import '@component/styles/styles.css'
 import '@component/styles/header.css'
 import '@component/styles/footer.scss'

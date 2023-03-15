@@ -25,7 +25,7 @@ const Home = () => {
     <Layout>
     <div>
       <div id={post.slug}>
-        <h1>{post.title.rendered}</h1>
+        <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
         <div
           dangerouslySetInnerHTML={{ __html: post.content.rendered }}
           className="container"

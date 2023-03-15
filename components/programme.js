@@ -29,7 +29,7 @@ function Programme(props) {
 
   return (
     <div id={post.slug}>
-      <h1>{post.title.rendered}</h1>
+      <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
       <div className="container">
         <Tabs
           onSelect={(index) => handleTabClick(index)}

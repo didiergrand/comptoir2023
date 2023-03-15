@@ -7,16 +7,23 @@
     border: 1px solid var(--green-light);
     border-right: 0;
     cursor: pointer;
+    padding:1rem;
     h3,p{
         padding: 0 !important;
         margin: 0 !important;
         text-align: center;
-        color: var(--white);
+        color: var(--green);
+        line-height: 1;
     }
     h3{
         font-size: 1.5rem;
         font-weight: 600;
         border: 0;
+    }
+    &.react-tabs__tab--selected{
+        h3,p{
+            color: var(--white);
+        }
     }
     &:last-child{
         border-right: 1px solid var(--green-light) !important;

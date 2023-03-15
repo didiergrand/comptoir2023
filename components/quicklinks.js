@@ -13,7 +13,7 @@ const QuickLinks = () => {
                     </p>
 
                     <p>
-                    <strong>Transports publiques</strong><br />Accéder en toute
+                    <strong>Transports publics</strong><br />Accéder en toute
                     tranquillité à la manifestation en transports publics avec la ligne
                     202.
                     </p>

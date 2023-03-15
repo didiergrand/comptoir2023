@@ -1,14 +1,15 @@
 header{
     display: grid;
     grid-template-columns: auto 80px 60px;    
-    min-height: 80px;
+    height: 120px;
+
     align-items: center;
 }
 header .btn{
     margin-right: 0;
 }
 .logo img{
-    max-height: 150px;
+    max-height: 120px;
     padding: 0.2rem;
     width: auto;
 }
@@ -29,7 +30,6 @@ header .btn{
     header{
         display: grid;
         grid-template-columns: auto 220px 80px;    
-        min-height: 80px;
         align-items: center;
     }
     header .btn{
@@ -46,6 +46,7 @@ header .btn{
     header{
         grid-template-columns: 300px auto 220px;
         max-width: 1600px;
+        width: 100%;
         margin: 0 auto;
         align-items: center;
         position: relative;

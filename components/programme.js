@@ -2,7 +2,7 @@ import { parse } from 'node-html-parser';
 import { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import QuickLinks from "./quicklinks";
-
+import React from 'react';
 
 function Programme(props) {
   const { post } = props;
@@ -27,7 +27,32 @@ function Programme(props) {
     tabData.push({ id: index, title, content });
   });
 
+
+
+
+
+
+  const [isMobileView, setIsMobileView] = React.useState(false);
+
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 960px)'); // Define the breakpoint
+    setIsMobileView(mediaQuery.matches); // Set initial state based on screen size
+
+    const handleResize = (event) => setIsMobileView(event.matches);
+    mediaQuery.addListener(handleResize); // Listen for changes in screen size
+    return () => mediaQuery.removeListener(handleResize); // Remove listener when component unmounts
+  }, []);
+
   return (
+    <div>
+      {isMobileView ? 
+      
+      <div id={post.slug}>
+      <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+      <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} className="container" />
+      </div>
+      
+      :
     <div id={post.slug}>
       <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
       <div className="container">
@@ -50,7 +75,14 @@ function Programme(props) {
       </Tabs>
       </div>
       <QuickLinks />
+    </div>}
     </div>
   );
+
+
+
+
+
+
 }
 export default Programme;

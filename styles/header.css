@@ -1,0 +1,203 @@
+header{
+    display: grid;
+    grid-template-columns: auto 80px 60px;    
+    min-height: 80px;
+    align-items: center;
+}
+header .btn{
+    margin-right: 0;
+}
+.logo img{
+    max-height: 150px;
+    padding: 0.2rem;
+    width: auto;
+}
+@media screen and (max-width: 40rem){  
+    header .btn{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 0.5rem;
+    }
+    header .btn svg{
+        display: none;
+    }
+    .mobileNav-btn{
+        padding: 2rem 1rem;
+    }
+}
+@media screen and (min-width: 40rem){    
+    header{
+        display: grid;
+        grid-template-columns: auto 220px 80px;    
+        min-height: 80px;
+        align-items: center;
+    }
+    header .btn{
+        margin-right: 1rem;
+    }
+    .logo img{
+        padding: 1rem;
+    }
+}
+.desktopNav{
+    display: none;
+}
+@media screen and (min-width: 1200px){
+    header{
+        grid-template-columns: 300px auto 220px;
+        max-width: 1600px;
+        margin: 0 auto;
+        align-items: center;
+        position: relative;
+    }    
+    .mobileNav-btn{
+        display: none;
+    }
+    .desktopNav{
+        display: block;
+    }
+}
+
+
+/* -- Desktop Nav -- */
+
+.desktopNav .menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 1rem;
+    justify-content: center;
+}
+.desktopNav .menu-items{
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+}
+.desktopNav .menu-items .submenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    background-color: var(--blue-dark);
+    color: var(--white);
+    width: 18rem;
+    text-align: center;
+    left: 0rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+}
+.desktopNav .menu-items button[aria-expanded="true"]:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 3.5rem;
+    bottom: 0;
+    z-index: 4;
+    display: block;
+    rotate: 45deg;
+    background: var(--blue-dark);
+}
+.desktopNav .menu-items .submenu-items{
+    padding: 1rem 0;
+    width: 100%;
+    display: block;
+}
+
+/* -- Mobile Nav -- */
+.mobileNav-panel{
+    position: absolute;
+    z-index: 1;
+    background-color: var(--white);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 7rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.mobileNav-panel li.menu-items{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--blue-light);
+}
+.mobileNav-panel li.menu-items button{
+    position: relative;
+}
+.mobileNav-panel li.menu-items button:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid var(--blue-dark);
+    border-bottom: 4px solid transparent;
+    position: absolute;
+    top: 0.7rem;
+    right: -1rem;
+    z-index: 4;
+    display: block;
+}
+.mobileNav-panel li.menu-items button[aria-expanded="true"]:after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid var(--dark-blue);
+    top: 0.5rem;
+}
+@media screen and (max-width: 30rem){  
+    .mobileNav-btn{
+        padding: 2rem 1rem;
+    }
+}
+.mobileNav-btn{
+    padding: 2rem;
+}
+.mobileNav-btn{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+.mobileNav{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobileNav .menu-items .submenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0
+}
+.mobileNav .menu-items .submenu-items{
+    padding: 1rem 0;
+}
+/* -- Both Navs -- */
+.menu *:hover{
+    text-decoration: none !important;
+}
+.menu-items,
+.menu-items button{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.menu-items button[aria-expanded="true"]{
+    color: var(--blue);
+}
+.submenu-items{
+    font-weight: 400;
+}
+a.submenu-items:hover{
+    color: var(--blue) !important;
+}

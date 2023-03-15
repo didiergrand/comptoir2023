@@ -1,0 +1,85 @@
+#sponsors{    
+    padding: 1rem;
+}
+#sponsors > .container .sponsors{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: space-around;
+}
+#sponsors img{
+    max-height: 5rem;
+    padding: 0 1rem;
+    width: auto;
+}
+#sponsors img.chardonnens{
+    max-height: 4rem;
+}
+#sponsors img.regiechatel{
+    max-height: 4rem;
+}
+#sponsors img.mesa{
+    max-height: 4rem;
+}
+#sponsors img.bcf{
+    max-height: 4rem;
+}
+#sponsors img.chatel{
+    max-height: 6rem;
+}
+#sponsors img.acv{
+    max-height: 7rem;
+}
+#copy{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    margin: 0 auto;
+    max-width: auto;
+    border: 0;
+    line-height: normal;
+}
+#dgLogo{
+    max-height: 10rem;
+}
+#dgBanner{
+    padding: 1rem;
+}
+#dgBanner > .container{
+    display: grid;
+    grid-template-columns: 180px 1fr 180px 90px;
+    align-items: center;
+}
+#dgBanner h1{
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+    margin: 0 auto;
+    padding-top: 0;
+    max-width: auto;
+    border: 0;
+    color: var(--white);
+}
+#dgBanner h1::before{
+    display: none;
+}
+#dgBanner p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    margin: 0 auto;
+    max-width: auto;
+    border: 0;
+    color: var(--white);
+    line-height: normal;
+}
+#dgText{
+    padding: 0 1rem;
+}

@@ -1,3 +1,6 @@
+.tabs{
+    box-shadow: 0 15px 30px rgb(0 0 0 / 0.05);
+}
 .react-tabs__tab-list{
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
@@ -21,6 +24,10 @@
         border: 0;
     }
     &.react-tabs__tab--selected{
+        background-color: var(--green) !important;
+        border: 0 !important;
+        border-radius:0;
+        outline-color: transparent;
         h3,p{
             color: var(--white);
         }
@@ -29,12 +36,9 @@
         border-right: 1px solid var(--green-light) !important;
     }
 }
-
-
-
-.react-tabs__tab--selected{
-    background-color: var(--green) !important;
-    border: 0 !important;
-    border-radius:0;
-    outline-color: transparent;
+.react-tabs__tab-panel table td:first-child{
+    width: 10rem;
+}
+.react-tabs__tab-panel--selected{
+    padding: 1rem 3rem 5rem
 }

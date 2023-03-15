@@ -34,7 +34,7 @@ function Programme(props) {
         <Tabs
           onSelect={(index) => handleTabClick(index)}
           selectedIndex={currentTab}
-          className="shadow-2xl"
+          className="tabs mt-12 mb-8"
         >
         <TabList>
           {tabData.map((tab) => (

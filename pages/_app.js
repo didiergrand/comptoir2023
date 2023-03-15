@@ -3,11 +3,10 @@ import '@component/styles/fonts.css'
 import '@component/styles/globals.css'
 import '@component/styles/styles.css'
 import '@component/styles/header.css'
-import '@component/styles/footer.css'
+import '@component/styles/footer.scss'
 import '@component/styles/pages/homepage.css'
 import '@component/styles/pages/comite-direction.css'
 import '@component/styles/pages/programme.scss'
-import '@component/styles/footer.css'
 
 // import the Head component for appending elements to the head of the page
 import Head from "next/head";

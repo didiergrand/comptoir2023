@@ -1,17 +1,28 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Fragment, useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./navbar";
+import { useRouter } from "next/router";
 
 function MobileNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
+
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setIsMenuOpen(false);
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router]);
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleSubmenuClick = () => {
-    setIsMenuOpen(false);
   };
 
   return (
@@ -26,7 +37,7 @@ function MobileNav() {
       </button>
       {isMenuOpen && (
         <div className="mobileNav-panel">
-          <Navbar handleSubmenuClick={handleSubmenuClick} />
+          <Navbar />
         </div>
       )}
     </>

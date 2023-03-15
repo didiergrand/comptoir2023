@@ -77,8 +77,7 @@ function Footer() {
       </div>
       <div id="copy">
         <div className="container">
-          ©2023 Comptoir de la Veveyse | webdesign & code : Didier Grand -
-          <a href="https://digitalgarage.ch" target="_blank" rel="noreferrer">
+          ©2023 Comptoir de la Veveyse | webdesign & code : Didier Grand - <a href="https://digitalgarage.ch" target="_blank" rel="noreferrer">
             digitalgarage.ch
           </a>
         </div>
@@ -98,7 +97,7 @@ function Footer() {
               entreprise! Digitalgarage, avec plus de 20 ans d’expérience en
               design et développement web, crée des sites modernes et fiables,
               adaptés à l’image de votre entreprise. <br />
-              Visitez digitalgarage.ch pour pour en savoir plus.
+              Visitez <a href="https://digitalgarage.ch" target="_blank" rel="noreferrer">digitalgarage.ch</a> pour pour en savoir plus.
             </p>
           </div>
           <div id="dgBtn">

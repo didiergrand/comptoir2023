@@ -12,13 +12,13 @@
   "dependencies": {
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^2.0.16",
+    "axios": "^0.16.2",
     "next": "13.2.3",
     "node-html-parser": "^6.1.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-tabs": "^6.0.0",
-    "scss": "^0.2.4",
-    "axios": "^0.16.2"
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

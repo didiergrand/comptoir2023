@@ -7,9 +7,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <Suspense fallback={<Loading />}>
-        <main>{children}</main>
-      </Suspense>
+        <Suspense fallback={<Loading />}>
+          <main>{children}</main>
+        </Suspense>
       <Footer />
     </>
   );

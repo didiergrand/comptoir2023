@@ -173,5 +173,5 @@ footer {
     margin-bottom: 5rem;
 }
 .hide{
-    display: none;
+    display: none !important;
 }

@@ -38,7 +38,7 @@ export async function getServerSideProps(context) {
   const { slug } = context.query;
 
   try {
-    const response = await axios.get(`https://comptoir-veveyse.ch/wp-json/wp/v2/pages?slug=${slug}`);
+    const response = await axios.get(`https://admin.comptoir-veveyse.ch/wp-json/wp/v2/pages?slug=${slug}`);
     const post = response.data[0];
 
     if (!post) {

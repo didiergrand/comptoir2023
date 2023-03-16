@@ -8,7 +8,7 @@ const Navbar = (props) => {
   const [menuComptoirItems, setMenuComptoirItems] = useState([]);
   useEffect(() => {
     axios
-      .get("https://comptoir-veveyse.ch/wp-json/wp-api-menus/v2/menus/18")
+      .get("https://admin.comptoir-veveyse.ch/wp-json/wp-api-menus/v2/menus/18")
       .then((response) => {
         setMenuComptoirItems(response.data.items);
       })

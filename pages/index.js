@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get(`https://comptoir-veveyse.ch/wp-json/wp/v2/pages/2510`)
+      .get(`https://admin.comptoir-veveyse.ch/wp-json/wp/v2/pages/2510`)
       .then((response) => {
         setPost(response.data);
       })

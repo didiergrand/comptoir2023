@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const QuickLinks = () => {
     return (
             <>    
@@ -9,7 +11,7 @@ const QuickLinks = () => {
 
                     <p>
                     Le comptoir de la Veveyse se situe à la Halle triple du Lussy de
-                    Châtel-St-Denis.<br /><a href="/transports">Plan d’accès &gt;</a>
+                    Châtel-St-Denis.<br /><Link href="/transports">Plan d’accès &gt;</Link>
                     </p>
 
                     <p>
@@ -29,9 +31,9 @@ const QuickLinks = () => {
                     <h3>Exposants</h3>
 
                     <p>
-                    Plus de 50 entreprises exposeront lors de cette édition 2023.<br /><a
+                    Plus de 50 entreprises exposeront lors de cette édition 2023.<br /><Link
                         href="/exposants"
-                        >Liste des exposants &gt;</a
+                        >Liste des exposants &gt;</Link
                     >
                     </p>
                 </div>

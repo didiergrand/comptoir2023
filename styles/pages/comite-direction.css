@@ -19,17 +19,20 @@
     font-size: 0.75rem;
     padding-bottom: 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: column;
 }
-#comite-de-direction-2023 .wp-block-column:has(h5){
+#comite-de-direction-2023 .wp-block-column{
     background-color: var(--blue-light);
 }
-#comite-de-direction-2023 .highlight_section .wp-block-column:has(h5){
+#comite-de-direction-2023 .wp-block-column:empty{
+    background-color: transparent;
+}
+#comite-de-direction-2023 .highlight_section .wp-block-column{
     background-color: var(--white);
 }
-#comite-de-direction-2023 .wp-block-column:has(figure){
-    justify-content: flex-start;
+#comite-de-direction-2023 .highlight_section .wp-block-column:empty{
+    background-color: transparent;
 }
 #comite-de-direction-2023 h3{
     font-weight: 700;
@@ -39,6 +42,9 @@
     text-transform: none;
     padding: 0;
     line-height: normal;
+}
+#comite-de-direction-2023 .wp-block-column > h5:first-child{
+    margin-top: 20rem;
 }
 
 

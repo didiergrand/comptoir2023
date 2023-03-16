@@ -5,7 +5,7 @@ export default function Loading() {
     return (
         <Layout>
             <div className="loading">
-                <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             </div>
         </Layout>
         )

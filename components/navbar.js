@@ -3,6 +3,7 @@ import axios from "axios";
 import Link from "next/link";
 import { Menu } from "@headlessui/react";
 
+
 const Navbar = (props) => {
   const [menuComptoirItems, setMenuComptoirItems] = useState([]);
 

@@ -37,7 +37,7 @@ const Navbar = (props) => {
                           >
                             <Link
                               href={submenu.url.replace(
-                                "https://comptoir-veveyse.ch",
+                                "https://admin.comptoir-veveyse.ch",
                                 ""
                               )}
                               onClick={handleSubmenuClick}
@@ -52,7 +52,7 @@ const Navbar = (props) => {
                 ) : (
                   <Link
                     href={menu.url.replace(
-                      "https://comptoir-veveyse.ch",
+                      "https://admin.comptoir-veveyse.ch",
                       ""
                     )}
                     onClick={handleSubmenuClick}

@@ -14,7 +14,7 @@ function Header() {
       <div className="desktopNav">
         <Navbar />
       </div>
-      <Link href="/programme" className="btn transition-all hover:shadow-md focus:outline-none focus:ring-2 focus:ring-opacity-75 inline-flex">
+      <Link href="/" className="btn transition-all hover:shadow-md focus:outline-none focus:ring-2 focus:ring-opacity-75 inline-flex">
         <HeartIcon className="w-6 h-6" aria-hidden="true" />
         Entrée gratuite
       </Link>

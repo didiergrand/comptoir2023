@@ -156,3 +156,22 @@ main {
 footer {
   flex-shrink: 0;
 }
+.affiche,
+.default-banner{
+    background-color: var(--blue-light);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    margin-bottom: 5rem;
+}
+.hide{
+    display: none !important;
+}

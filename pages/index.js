@@ -33,7 +33,6 @@ const Home = () => {
         />
       </div>
     </div>
-     <QuickLinks />
     </Layout>
   );
 };

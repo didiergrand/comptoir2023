@@ -6,7 +6,6 @@ import { Menu } from "@headlessui/react";
 
 const Navbar = (props) => {
   const [menuComptoirItems, setMenuComptoirItems] = useState([]);
-
   useEffect(() => {
     axios
       .get("https://admin.comptoir-veveyse.ch/wp-json/wp-api-menus/v2/menus/18")
@@ -25,7 +24,7 @@ const Navbar = (props) => {
         <ul className="menu">
           {menuComptoirItems.map((menu, index) => {
             return (
-              <li className="menu-items" key={index}>
+              <li className={`menu-items ${menu.classes}`} key={index}>
                 {menu.children ? (
                   <Menu>
                     <Menu.Button>{menu.title}</Menu.Button>
@@ -38,7 +37,7 @@ const Navbar = (props) => {
                           >
                             <Link
                               href={submenu.url.replace(
-                                "https://comptoir-veveyse.ch",
+                                "https://admin.comptoir-veveyse.ch",
                                 ""
                               )}
                               onClick={handleSubmenuClick}
@@ -53,7 +52,7 @@ const Navbar = (props) => {
                 ) : (
                   <Link
                     href={menu.url.replace(
-                      "https://comptoir-veveyse.ch",
+                      "https://admin.comptoir-veveyse.ch",
                       ""
                     )}
                     onClick={handleSubmenuClick}

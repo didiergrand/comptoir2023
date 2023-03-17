@@ -13,7 +13,7 @@ function Footer() {
     <footer>
       <div id="sponsors">
         <div className="container">
-          <h3>Sponsors principaux</h3>
+          <h3>Sponsors officiels</h3>
           <div className="sponsors">
             <a href="https://acv-fr.ch/" target="_blank" rel="noreferrer">
               <Image src={acv} alt="ACV" className="avc" />

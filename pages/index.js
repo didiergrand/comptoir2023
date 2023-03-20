@@ -31,16 +31,16 @@ const Home = () => {
       <div id={post.slug}>
         {/* add 2 cols grid from tailwindcss */}
         {/* .container */}
-        <Image src={banner} alt="banner 23"/>
+        <Image src={banner} alt="Banner du Comtoir de la Veveyse 2023"/>
         <div className="container mt-20">
-        <div className="grid grid-cols-12">
+        <div className="md:grid md:grid-cols-12">
           <div
             dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-            className="col-start-1 col-end-7"
+            className="md:col-start-1 md:col-end-8"
           />
           
-          <div className="col-start-9 col-end-13">
-            <Image src={affiche} alt="Affiche 23"/>
+          <div className="md:col-start-9 md:col-end-13 pt-0 md:pt-20 lg:pt-10">
+            <Image src={affiche} alt="Affiche du Comptoir de la Veveyse 2023"/>
           </div>
         </div>
         </div>

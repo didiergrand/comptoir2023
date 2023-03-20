@@ -76,7 +76,7 @@
 @media screen and (min-width: 980px) {
     #dgBanner > .container{
         display: grid;
-        grid-template-columns: 140px 1fr 180px 90px;
+        grid-template-columns: 70px 1fr 180px 90px;
         align-items: center;
     }
 }
@@ -112,7 +112,7 @@
     text-decoration: underline;
 }
 #dgBanner img{
-    max-width: 120px;
+    max-width: 50px;
 }
 #dgText{
     padding: 0 1rem;

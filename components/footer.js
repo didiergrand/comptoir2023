@@ -94,10 +94,7 @@ function Footer() {
             </h1>
             <p>
               Donnez à votre site web une touche personnelle qui reflète votre
-              entreprise! Digitalgarage, avec plus de 20 ans d’expérience en
-              design et développement web, crée des sites modernes et fiables,
-              adaptés à l’image de votre entreprise. <br />
-              Visitez <a href="https://digitalgarage.ch" target="_blank" rel="noreferrer">digitalgarage.ch</a> pour pour en savoir plus.
+              entreprise!
             </p>
           </div>
           <div id="dgBtn">

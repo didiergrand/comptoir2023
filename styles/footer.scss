@@ -53,6 +53,15 @@
     max-width: auto;
     border: 0;
     line-height: normal;
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        img{
+            width: 8px;
+            height: 8px;
+        }
+    }
 }
 #dgLogo{
     max-height: 10rem;

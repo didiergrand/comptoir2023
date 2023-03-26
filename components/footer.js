@@ -77,7 +77,7 @@ function Footer() {
       </div>
       <div id="copy">
         <div className="container">
-          ©2023 Comptoir de la Veveyse | webdesign & code : Didier Grand - <a href="https://digitalgarage.ch" target="_blank" rel="noreferrer">
+          ©2023 Comptoir de la Veveyse |&nbsp;<Image src={dgLogo} alt="DigitalGarage" width={8} height={8} />&nbsp;webdesign&nbsp;&&nbsp;code&nbsp;:&nbsp;Didier&nbsp;Grand -&nbsp;<a href="https://digitalgarage.ch" target="_blank" rel="noreferrer"> 
             digitalgarage.ch
           </a>
         </div>
@@ -85,7 +85,7 @@ function Footer() {
       <div id="dgBanner" className="bg-gradient-to-r from-sky-700 to-sky-900">
         <div className="container">
           <a href="https://digitalgarage.ch" target="_blank" rel="noreferrer">
-            <Image src={dgLogo} alt="DigitalGarage" width={200} height={55} />
+            <Image src={dgLogo} alt="DigitalGarage" width={55} height={55} />
           </a>
           <div id="dgText">
             <h1>

@@ -99,7 +99,7 @@ function Footer() {
           </div>
           <div id="dgBtn">
             <a
-              href="https://digitalgarage.ch"
+              href="https://digitalgarage.ch?ref=comptoirVeveyse"
               target="_blank"
               rel="noreferrer"
               className="btn bg-gradient-to-r from-sky-400 to-sky-600 opacity-80 transition duration-500 hover:shadow-md hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-opacity-75 inline-flex"

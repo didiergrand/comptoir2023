@@ -84,7 +84,7 @@ function Footer() {
       </div>
       <div id="dgBanner" className="bg-gradient-to-r from-sky-700 to-sky-900">
         <div className="container">
-          <a href="https://digitalgarage.ch" target="_blank" rel="noreferrer">
+          <a href="https://digitalgarage.ch?ref=comptoirVeveyse" target="_blank" rel="noreferrer">
             <Image src={dgLogo} alt="DigitalGarage" width={55} height={55} />
           </a>
           <div id="dgText">

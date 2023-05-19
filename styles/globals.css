@@ -4,6 +4,13 @@
     justify-content: center;
     height: 100%;
 }
+.information {
+  background-color: var(--blue-light);
+  color: var(--blue-dark);
+  padding: 20px;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
 .lds-roller {
     display: inline-block;
     position: relative;

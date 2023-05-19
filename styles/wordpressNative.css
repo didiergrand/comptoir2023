@@ -2632,8 +2632,7 @@ ul.wp-block-rss.is-grid li {
 }
 
 .wp-block-separator {
-  border-top: 1px solid currentColor;
-  border-bottom: 1px solid currentColor;
+  border-top: 1px solid var(--blue-link);
 }
 .wp-block-separator.is-style-dots {
   background: none !important;

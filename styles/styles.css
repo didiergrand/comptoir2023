@@ -53,11 +53,12 @@ h2 {
     border-bottom: 1px solid var(--blue-dark);
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: var(--blue-dark);
-    letter-spacing: 0.1rem;
+    letter-spacing: 0;
     margin: 1.5rem auto;
     max-width: 76rem;
+    line-height: 2.2rem;
 }
 h2::before {
     content: "";
@@ -68,6 +69,9 @@ h2::before {
     height: 0.5rem;
     background: var(--blue-dark);
     z-index: -1;
+}
+h2 sup{    
+    font-size: 65%;
 }
 
 h3 {

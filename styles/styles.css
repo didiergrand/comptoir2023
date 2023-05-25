@@ -37,7 +37,7 @@ h1::before {
     bottom: -0.25rem;
     width: 5rem;
     height: 0.5rem;
-    background: var(--yellow);
+    background: var(--blue-dark);
     z-index: -1;
 }
 @media screen and (min-width: 80rem){

@@ -22,11 +22,11 @@ body{
 h1 {
     padding: 2rem 0 0.5rem;
     position: relative;
-    border-bottom: 1px solid var(--blue-dark);
+    border-bottom: 1px solid var(--blue);
     font-weight: 900;
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: var(--blue-dark);
+    color: var(--blue);
     margin: 1.5rem;
 }
 
@@ -37,7 +37,7 @@ h1::before {
     bottom: -0.25rem;
     width: 5rem;
     height: 0.5rem;
-    background: var(--blue-dark);
+    background: var(--blue);
     z-index: -1;
 }
 @media screen and (min-width: 80rem){
@@ -50,11 +50,11 @@ h1::before {
 h2 {
     padding: 2rem 0;
     position: relative;
-    border-bottom: 1px solid var(--blue-dark);
+    border-bottom: 1px solid var(--blue);
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1.9rem;
-    color: var(--blue-dark);
+    color: var(--blue);
     letter-spacing: 0;
     margin: 1.5rem auto;
     max-width: 76rem;
@@ -67,7 +67,7 @@ h2::before {
     bottom: -0.25rem;
     width: 4rem;
     height: 0.5rem;
-    background: var(--blue-dark);
+    background: var(--blue);
     z-index: -1;
 }
 h2 sup{    

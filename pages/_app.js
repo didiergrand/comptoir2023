@@ -8,6 +8,7 @@ import '@component/styles/footer.scss'
 import '@component/styles/pages/homepage.css'
 import '@component/styles/pages/comite-direction.css'
 import '@component/styles/pages/programme.scss'
+import '@component/styles/pages/sponsors.scss'
 
 import { useEffect } from "react";
 import Script from "next/script";

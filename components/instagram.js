@@ -70,7 +70,7 @@ const InstagramImages = () => {
     <div>
     <h2>Reseaux sociaux</h2>
       <div className="container">
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {displayedImages.map((image, index) => (
           <div key={index}>            
             <a href={image.permalink} target="_blank" rel="noopener noreferrer">

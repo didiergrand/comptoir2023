@@ -1,6 +1,7 @@
 import Layout from "@component/components/layout";
 import Loading from "@component/components/loading";
 import QuickLinks from "@component/components/quicklinks";
+import instagram from "@component/components/instagram";
 import Image from "next/image";
 import affiche from "../public/affiche23.jpg";
 import banner from "../public/ComptoiredelaVeveyse-banner3.png";

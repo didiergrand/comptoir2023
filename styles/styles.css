@@ -1,5 +1,6 @@
 :root{
     --yellow: #EDA737;
+    --yellow-hover: #E8A000;
     --green: #2E9E47;
     --green-light: #EAF4ED;
     --green-dark: #2C6526;
@@ -123,9 +124,25 @@ a:hover{
     text-decoration: none;
     color: var(--white);
 }
+.btn-secondary{
+    background-color: var(--yellow);
+}
+.btn-secondary:hover{
+    background-color: var(--yellow-hover);
+}
 .btn svg{
     margin-right: 0.5rem;
 }
+.btn-sm{
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    font-weight: 600;
+    text-rendering: geometricPrecision;
+}
+.btn-sm img{
+    width: 16px;
+}
+.co
 .container{
     padding-left: 2rem;
     padding-right: 2rem;

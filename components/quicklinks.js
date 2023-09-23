@@ -11,13 +11,12 @@ const QuickLinks = () => {
 
                     <p>
                     Le comptoir de la Veveyse se situe à la Halle triple du Lussy de
-                    Châtel-St-Denis.<br /><Link href="/transports">Plan d’accès &gt;</Link>
+                    Châtel-St-Denis.<br /><Link href="/plan-acces">Plan d’accès &gt;</Link>
                     </p>
 
                     <p>
                     <strong>Transports publics</strong><br />Accéder en toute
-                    tranquillité à la manifestation en transports publics avec la ligne
-                    202.
+                    tranquillité à la manifestation en transports publics.
                     </p>
 
                     <p>

@@ -41,19 +41,18 @@ const QuickLinks = () => {
                     <h3>Heures d’ouverture</h3>
 
                     <p>
-                    <strong>Stands exposants</strong><br />Mercredi : 18h – 23h<br />Jeudi
-                    : 18h – 23h<br />Vendredi : 18h – 23h<br />Samedi : 14h – 23h<br />Dimanche
-                    : 11h – 19h
+                    <strong>Stands exposants</strong><br />Mercredi : 11h00 – 21h00<br />Jeudi
+                    : 11h00 – 21h00<br />Vendredi : 11h00 – 21h00<br />Samedi : 11h00 – 21h00<br />Dimanche
+                    : 11h00 – 18h00
                     </p>
 
                     <p>
-                    <strong>Restauration</strong><br />Me – Je – Ve: 18h – 24h<br />Samedi
-                    : 11h – 24h<br />Dimanche : 11h – 20h
+                    <strong>Restauration</strong><br />Mercredi – Samedi: 11h00 – 0h00<br />Dimanche : 11h00 – 21h00
                     </p>
 
                     <p>
-                    <strong>Bar</strong><br />Me – Je – Ve: 18h – 2h<br />Samedi: 11h –
-                    3h<br />Dimanche: 11h – 21h
+                    <strong>Bars</strong><br />Mercredi – Jeudi: 16h00 – 1h30<br />Vendredi - Samedi: 11h00 –
+                    2h30<br />Dimanche: 11h00 – 22h00
                     </p>
                 </div>
                 </div>

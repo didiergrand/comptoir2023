@@ -1,7 +1,6 @@
 import { parse } from 'node-html-parser';
 import { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import QuickLinks from "./quicklinks";
 import React from 'react';
 
 function Programme(props) {
@@ -74,7 +73,6 @@ function Programme(props) {
         ))}
       </Tabs>
       </div>
-      <QuickLinks />
     </div>}
     </div>
   );

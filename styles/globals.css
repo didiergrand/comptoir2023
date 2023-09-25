@@ -95,3 +95,10 @@
       transform: rotate(360deg);
     }
   }
+  .important-title{
+    color: var(--blue);
+    font-size: 30px;
+  }
+  .rounded-img{
+    border-radius: 10px;
+  }

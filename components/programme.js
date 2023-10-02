@@ -18,6 +18,13 @@ function Programme(props) {
   const programmeTabs = doc.querySelectorAll('.programme-tab > div');
   const programmeContents = doc.querySelectorAll('.programme-content');
   
+  // Supprimer les éléments des onglets et des contenus des onglets du contenu original
+  programmeTabs.forEach((tab) => tab.remove());
+  programmeContents.forEach((content) => content.remove());
+  
+  // Le contenu restant après avoir supprimé les onglets et les contenus des onglets
+  const remainingContent = doc.toString();
+  
   // Créer un tableau de données à partir des éléments
   const tabData = [];
   programmeTabs.forEach((tab, index) => {
@@ -49,7 +56,7 @@ function Programme(props) {
       <div id={post.slug}>
       <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
       <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} className="container" />
-      </div>
+    </div>
       
       :
     <div id={post.slug}>
@@ -72,8 +79,10 @@ function Programme(props) {
           </TabPanel>
         ))}
       </Tabs>
+      <div dangerouslySetInnerHTML={{ __html: remainingContent }}></div>
       </div>
     </div>}
+
     </div>
   );
 

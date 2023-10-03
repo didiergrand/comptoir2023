@@ -102,3 +102,10 @@
   .rounded-img{
     border-radius: 10px;
   }
+  #the-6th-carte  td{
+    padding: 10px;
+    vertical-align: top;
+  }
+  #the-6th-carte  td:last-child {
+    width: 100px;
+}

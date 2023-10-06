@@ -68,7 +68,7 @@ const InstagramImages = () => {
 
   return (
     <div>
-    <h2>Reseaux sociaux</h2>
+    <h2>Réseaux sociaux</h2>
       <div className="container">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {displayedImages.map((image, index) => (

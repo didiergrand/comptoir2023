@@ -1,9 +1,9 @@
 import Layout from "@component/components/layout";
 import Loading from "@component/components/loading";
-import instagram from "@component/components/instagram"; 
 import Image from "next/image";
 import affiche from "../public/affiche23.jpg";
 import banner from "../public/ComptoiredelaVeveyse-banner3.png";
+import InstagramImages from "@component/components/instagram";
 
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -45,6 +45,7 @@ const Home = () => {
         </div>
         </div>
       </div>
+      <InstagramImages />
     </Layout>
   );
 };

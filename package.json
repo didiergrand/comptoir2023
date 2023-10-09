@@ -12,13 +12,18 @@
   "dependencies": {
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^2.0.16",
-    "axios": "^0.16.2",
-    "next": "13.2.3",
+    "axios": "^1.5.1",
+    "dom-parser": "^0.1.6",
+    "image-size": "^1.0.2",
+    "next": "^13.5.4",
     "node-html-parser": "^6.1.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-modal-image": "^2.6.0",
+    "react-photo-album": "^2.3.0",
     "react-tabs": "^6.0.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "yet-another-react-lightbox": "^3.13.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

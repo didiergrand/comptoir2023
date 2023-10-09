@@ -109,3 +109,6 @@
   #the-6th  td:last-child {
     width: 100px;
 }
+.react-photo-album--column img{
+  object-fit: cover;
+}

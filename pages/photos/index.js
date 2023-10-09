@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Layout from "@component/components/layout";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import { getAllPostsFromPhotosCategory } from "./api"; // Assurez-vous de mettre à
+import { getAllPostsFromPhotosCategory } from "../../lib/api"; // Assurez-vous de mettre à
 import Link from "next/link";
 
 function PhotosPage({ galleries }) {

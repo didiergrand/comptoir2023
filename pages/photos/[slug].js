@@ -1,4 +1,4 @@
-import { getPostBySlug } from './api';
+import { getPostBySlug } from '../../lib/api';
 import Photos from './photos';
 
 export async function getServerSideProps(context) {

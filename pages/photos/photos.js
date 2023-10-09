@@ -35,7 +35,6 @@ function Photos({ postData }) {
     return (
         <Layout>
             <div className="container">
-                <h1 dangerouslySetInnerHTML={{ __html: postData.title.rendered }} />
 
                 <PhotoAlbum 
                     layout="masonry" 

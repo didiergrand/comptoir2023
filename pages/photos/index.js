@@ -2,21 +2,23 @@ import React, { useState } from "react";
 import Layout from "@component/components/layout";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import { getAllPostsFromPhotosCategory } from "../../lib/api"; // Assurez-vous de mettre à
+import { getAllPostsFromPhotosCategory } from "../../lib/api"; 
 import Link from "next/link";
 
 function PhotosPage({ galleries }) {
   const [index, setIndex] = useState(-1);
-  console.log(galleries);
   return (
     <Layout>
       <div className="container">
+        <h1>Photos</h1>
+
+        
         <div className="grid grid-cols-3 gap-4">
-        {galleries.map((gallery, idx) => (
-          <div key={idx}>
-            <Link href={`/photos/${gallery.slug}`}>
-              {gallery.title}
-              img <img src={gallery.featuredImage} alt={gallery.title} />
+        {galleries.map((gallery, id) => (
+          <div key={id}>
+            <Link href={`/photos/${gallery.slug}`} className="gallerycard">
+                <img className="gallerycover" src={gallery.featuredImage ? gallery.featuredImage : '/placeholder.png'} alt={gallery.title} width={400} height={400} />
+                <div className="gallerytitle"><span property="name" dangerouslySetInnerHTML={{ __html: gallery.title }}></span></div>
             </Link>
           </div>
         ))}

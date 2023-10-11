@@ -196,3 +196,31 @@ footer {
 .hide{
     display: none !important;
 }
+.gallerycard{
+    position: relative;
+}
+.gallerycard:hover .gallerytitle{
+    background: var(--blue);
+    color: var(--white);    
+    transition: all 0.25s ease-in-out;
+}
+.gallerycover{
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+.gallerytitle{
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: var(--white);
+    margin: 30px;
+    text-align: left;
+    width: calc(100% - 60px);
+    text-transform: uppercase;
+    font-weight: normal;
+}
+#breadcrumbs{
+    margin-bottom: 20px;
+}

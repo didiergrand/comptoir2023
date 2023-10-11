@@ -121,6 +121,9 @@ header .btn{
     right: 0;
     bottom: 0;
 }
+.mobileNav-panel .menu{
+    background-color: var(--white);
+}
 .mobileNav-panel li.menu-items{
     text-align: center;
     display: flex;

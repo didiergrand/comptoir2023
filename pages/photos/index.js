@@ -35,8 +35,6 @@ export async function getStaticProps() {
     title: post.title.rendered,
     slug: post.slug,
     featuredImage: post._embedded && post._embedded["wp:featuredmedia"] && post._embedded["wp:featuredmedia"][0] ? post._embedded["wp:featuredmedia"][0].source_url : null,
-    // Assurez-vous que cette ligne est présente
-    // ... vous pouvez ajouter d'autres données si nécessaire
   }));
 
   return {

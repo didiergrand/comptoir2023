@@ -198,6 +198,7 @@ footer {
 }
 .gallerycard{
     position: relative;
+    display: block;
 }
 .gallerycard:hover .gallerytitle{
     background: var(--blue);

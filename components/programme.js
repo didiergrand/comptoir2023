@@ -2,10 +2,26 @@ import { parse } from 'node-html-parser';
 import { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import React from 'react';
+import { format } from 'date-fns'; // Importez les fonctions date-fns
+
+
 
 function Programme(props) {
+  const todayDate = format(new Date(), 'dd MMMM yyyy');
+  const today = todayDate.split(' ')[0];
   const { post } = props;
-  const defaultIndex = 0;
+  let defaultIndex = 0;
+  if(today === '19'){
+    defaultIndex = 1;
+  } else if(today === '20'){
+    defaultIndex = 2;
+  } else if(today === '21'){
+    defaultIndex = 3;
+  } else if(today === '22'){
+    defaultIndex = 4;
+  } else {
+    defaultIndex = 0;
+  }
   const [currentTab, setCurrentTab] = useState(defaultIndex);
 
   const handleTabClick = (index) => {

@@ -77,21 +77,32 @@ function Footer() {
       </div>
       <div id="copy">
         <div className="container">
-          <div className="md:flex">
-          <div className="copy">
-          ©2023 Comptoir de la Veveyse |&nbsp;
+          <div className="sm:flex">
+            <div className="copy">©2023 Comptoir de la Veveyse |&nbsp;</div>
+            <div className="digitalgarage sm:flex items-center">
+              <div className="flex items-center">
+                <Image src={dgLogo} alt="DigitalGarage" width={8} height={8} />
+                &nbsp;webdesign & code : Didier Grand&nbsp;-{" "}
+              </div>
+              &nbsp;
+              <a
+                href="https://digitalgarage.ch?ref=comptoirVeveyse"
+                target="_blank"
+                rel="noreferrer"
+              >
+                digitalgarage.ch
+              </a>
+            </div>
           </div>
-          <div className="digitalgarage flex items-center">
-          <Image src={dgLogo} alt="DigitalGarage" width={8} height={8} />&nbsp;webdesign & code : Didier Grand&nbsp;-&nbsp;<a href="https://digitalgarage.ch?ref=comptoirVeveyse" target="_blank" rel="noreferrer"> 
-            digitalgarage.ch
-          </a>
-          </div>
-        </div>
         </div>
       </div>
       <div id="dgBanner" className="bg-gradient-to-r from-sky-700 to-sky-900">
         <div className="container">
-          <a href="https://digitalgarage.ch?ref=comptoirVeveyse" target="_blank" rel="noreferrer">
+          <a
+            href="https://digitalgarage.ch?ref=comptoirVeveyse"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image src={dgLogo} alt="DigitalGarage" width={55} height={55} />
           </a>
           <div id="dgText">

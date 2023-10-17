@@ -31,7 +31,7 @@ const Home = () => {
       <div id={post.slug}>
         {/* add 2 cols grid from tailwindcss */}
         {/* .container */}
-        <Image src={banner} alt="Banner du Comtoir de la Veveyse 2023"/>
+        <Image src={banner} className="w-full" alt="Banner du Comtoir de la Veveyse 2023"/>
         <div className="container mt-20">
         <div className="md:grid md:grid-cols-12">
           <div
